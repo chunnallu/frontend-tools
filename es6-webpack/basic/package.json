@@ -1,0 +1,14 @@
+{
+  "name": "es6webpackbasic",
+  "version": "1.0.0",
+  "description": "es6 webpack 基础开发环境",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "es6"
+  ],
+  "author": "luchunnal",
+  "license": "ISC"
+}
