@@ -4,3 +4,8 @@
 
 frontend-tools 旨在研究前端用到的各种技术和工具，包括ES6、gulp、webpack、bower、nodejs、browser-sync等等，既是为了自己学习和总结，也是想将这些东西分享出来。
 
+
+# 学习资源
+1. [Microsoft + Node.js Guidelines](https://github.com/Microsoft/nodejs-guidelines)
+
+> 在windows下开发nodejs应用的权威教程，值得一读
