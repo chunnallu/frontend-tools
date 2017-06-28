@@ -2,13 +2,17 @@
   "name": "es6webpackbasic",
   "version": "1.0.0",
   "description": "es6 webpack 基础开发环境",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel src -d build"
   },
   "keywords": [
     "es6"
   ],
   "author": "luchunnal",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-env": "^1.5.2"
+  }
 }

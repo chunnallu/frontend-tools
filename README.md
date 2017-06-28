@@ -4,8 +4,14 @@
 
 frontend-tools 旨在研究前端用到的各种技术和工具，包括ES6、gulp、webpack、bower、nodejs、browser-sync等等，既是为了自己学习和总结，也是想将这些东西分享出来。
 
+## 准备环境
+如果是在windows下开发的话，首先以管理员身份打开一个命令行，运行：
+```text
+npm install -g windows-build-tools
+```
+这会安装Microsoft开发的windowsnode环境构建工具
 
-# 学习资源
+## 学习资源
 1. [Microsoft + Node.js Guidelines](https://github.com/Microsoft/nodejs-guidelines)
 
 > 在windows下开发nodejs应用的权威教程，值得一读
