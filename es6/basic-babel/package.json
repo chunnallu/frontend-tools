@@ -1,7 +1,7 @@
 {
-  "name": "es6webpackbasic",
+  "name": "basicbabel",
   "version": "1.0.0",
-  "description": "es6 webpack 基础开发环境",
+  "description": "es6 babel 基础开发环境",
   "scripts": {
     "build": "babel src -d build"
   },

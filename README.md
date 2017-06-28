@@ -11,6 +11,13 @@ npm install -g windows-build-tools
 ```
 这会安装Microsoft开发的windowsnode环境构建工具
 
+# 子项目
+每个子项目都独立的，下载下来后都可独立运行
+
+|项目|概述|
+|---|---|
+|[basicbabel](es6/basic-babel)|使用babel编译器将ES6代码编译成ES5代码|
+
 ## 学习资源
 1. [Microsoft + Node.js Guidelines](https://github.com/Microsoft/nodejs-guidelines)
 
