@@ -12,9 +12,10 @@
 |---|---|
 |build|经过autoprefixer编译后的代码，可以打开`build/index.css`看看，里面已有自动添加的前缀|
 |src|源代码，里面的`index.css`只使用标准写法|
-/package.json/npm配置文件，其中的'script`定义了`npm run build`命令的内容/
+| package.json |npm配置文件，其中的'script`定义了`npm run build`命令的内容 |
 
 ## 使用项目
 
 1、运行`npm install`安装依赖
+
 2、运行`npm run build`,然后打开`build/index.css`看自动生成的带前缀的css文件
