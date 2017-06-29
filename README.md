@@ -21,7 +21,10 @@ npm install -g windows-build-tools
 |css|||
 ||[autoprefix](css/autoprefix-basic)|自动加兼容性前缀|
 |nodejs|||
+||[node-debugger](nodejs/node-debugger)|nodejs自带命令行调试工具|
 ||node-inspector|nodejs调试工具|
+|i18n|||
+
 
 ## 学习资源
 1. [Microsoft + Node.js Guidelines](https://github.com/Microsoft/nodejs-guidelines)
