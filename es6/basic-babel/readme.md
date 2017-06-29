@@ -6,6 +6,8 @@
 
 因为目前浏览器对ES6语法的支持还不全面，所以，为了立即能使用ES6定义的新特性，可以使用Babel将ES6代码转译成ES5。本文参考[babel官网例子](https://babeljs.io/docs/setup/#installation)。
 
+要看ES6的支持情况，可以[es6 compat-table](https://kangax.github.io/compat-table/es6/)
+
 ## 项目结构
 
 |文件及目录|说明|
