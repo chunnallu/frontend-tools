@@ -14,10 +14,14 @@ npm install -g windows-build-tools
 # 子项目
 每个子项目都独立的，下载下来后都可独立运行
 
-|项目|概述|
-|---|---|
-|[basicbabel](es6/basic-babel)|使用babel编译器将ES6代码编译成ES5代码|
-|[autoprefix](css/autoprefix-basic)|自动加兼容性前缀|
+|项目|子项目|概述|
+|---|---|---|
+|es6|||
+||[basicbabel](es6/basic-babel)|使用babel编译器将ES6代码编译成ES5代码|
+|css|||
+||[autoprefix](css/autoprefix-basic)|自动加兼容性前缀|
+|nodejs|||
+||node-inspector|nodejs调试工具|
 
 ## 学习资源
 1. [Microsoft + Node.js Guidelines](https://github.com/Microsoft/nodejs-guidelines)
