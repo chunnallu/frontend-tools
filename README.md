@@ -24,7 +24,8 @@ npm install -g windows-build-tools
 ||[node-debugger](nodejs/node-debugger)|nodejs自带命令行调试工具|
 ||node-inspector|nodejs调试工具|
 |i18n|||
-
+|media|||
+||[webp](media/webp)|将jpg转成webp，体验webp格式|
 
 ## 学习资源
 1. [Microsoft + Node.js Guidelines](https://github.com/Microsoft/nodejs-guidelines)
