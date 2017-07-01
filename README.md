@@ -22,7 +22,8 @@ npm install -g windows-build-tools
 |css|||
 ||[autoprefix](css/autoprefix-basic)|自动加兼容性前缀|
 |nodejs|||
-||[node-debugger](nodejs/node-debugger)|nodejs自带命令行调试工具|
+||[node-debugger](nodejs/node-debugger)|使用nodejs自带命令行调试工具调试js|
+||[node-debugger-gulp-task](node-debugger-gulp-task)|使用node原生调试器调试gulp任务|
 ||node-inspector|nodejs调试工具|
 |i18n|||
 |media|||

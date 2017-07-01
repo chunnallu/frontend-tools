@@ -1,0 +1,10 @@
+{
+  "name": "node-debugger-gulp-task",
+  "version": "0.0.1",
+  "scripts":{
+      "start": "gulp movefiles"
+   },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
