@@ -10,7 +10,7 @@
 function handleString(text){
     var start = text.indexOf("href");
     if(start!=-1){
-        start+=6;
+        start+=6;  //跳过href='
         var end = text.indexOf("'",start);
         return text.substring(start,end);
     }
@@ -19,5 +19,6 @@ function handleString(text){
 
 var text = "<a href='https://www.baidu.com/index.html'></a>";
 var result = handleString(text);
+debugger;
 console.log(result);
 
