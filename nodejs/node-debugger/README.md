@@ -35,6 +35,7 @@ watch, unwatch, watchers, repl, exec, restart, kill, list, scripts, breakOnExcep
  - reatsrt 重新运行文件
  - 什么都不输入 重复运行上一个命令
  - watch 监视变量
+ - setsetBreakpoint(line) 动态设置断点，你可以在调试的过程中，指定在某行打上断点
  
 
 3、在`debug>`后面输入s,进行步进调试
