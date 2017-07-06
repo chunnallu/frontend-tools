@@ -5,6 +5,6 @@ webpack +  babel 开发环境
 ## webpack
 
 [webpack](https://webpack.js.org/)是一个打包工具,官网有一张很形象的图：
-![](doc/images/webpack-bundle.png)
+![](doc/imgs/webpack-bundle.png)
 
 ## 
