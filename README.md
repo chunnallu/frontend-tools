@@ -5,11 +5,18 @@
 frontend-tools 旨在研究前端用到的各种技术和工具，包括ES6、gulp、webpack、bower、nodejs、browser-sync等等，既是为了自己学习和总结，也是想将这些东西分享出来。
 
 ## 准备环境
+首先安装[nodejs](https://nodejs.org/zh-cn/download/current/),装好后运行：
+```text
+node -v
+npm -v
+```
+能运行成功说明安装成功了。
+
 如果是在windows下开发的话，首先以管理员身份打开一个命令行，运行：
 ```text
 npm install -g windows-build-tools
 ```
-这会安装Microsoft开发的windowsnode环境构建工具
+这会安装Microsoft开发的windows node开发环境构建工具
 
 # 子项目
 每个子项目都独立的，下载下来后都可独立运行

@@ -1,0 +1,22 @@
+{
+  "name": " webpackbabel ",
+  "version": "1.0.0",
+  "description": "webpack +  babel 开发环境",
+  "scripts": {
+    "start": "webpack --config webpack.config.js",
+    "build": "webpack src/app.js dist/bundle.js"
+  },
+  "keywords": [
+    "es6"
+  ],
+  "author": "luchunnal",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-env": "^1.5.2",
+    "webpack": "^3.0.0"
+  },
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
+}
