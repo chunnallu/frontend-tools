@@ -60,47 +60,11 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 2);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_jquery__);
-/**
- * Created by luchu on 2017/7/6.
- */
-
-class BoxManger{
-
-    constructor(){
-        this.box = __WEBPACK_IMPORTED_MODULE_0_jquery___default.a(".box");
-    }
-
-    init(app){
-        this.app = app;
-        this.height = this.box.css("height");
-        this.width = this.box.css("width");
-        this.box.css("left",`calc(50% - ${this.width}/2)`);
-        this.box.css("top",`calc(50% - ${this.height}/2)`)
-    }
-
-    getBox(){
-        return this.box;
-    }
-
-    changeColor(){
-        this.box.css("background","#380383");
-    }
-}
-/* harmony export (immutable) */ __webpack_exports__["a"] = BoxManger;
-
-
-/***/ }),
-/* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -10360,84 +10324,111 @@ return jQuery;
 
 
 /***/ }),
-/* 2 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/* 1 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__BoxManager__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__EventManager__ = __webpack_require__(3);
-/**
- * Created by lcl on 2017/6/28.
- */
 
 
-class App{
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }(); /**
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      * Created by luchu on 2017/7/8.
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      */
 
-    constructor(){
-        this.boxManager = new __WEBPACK_IMPORTED_MODULE_0__BoxManager__["a" /* default */]();
-        this.eventManager = new __WEBPACK_IMPORTED_MODULE_1__EventManager__["a" /* default */]();
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+var _DomManager = __webpack_require__(2);
+
+var _DomManager2 = _interopRequireDefault(_DomManager);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var App = function () {
+    function App() {
+        _classCallCheck(this, App);
+
+        this.domManager = _DomManager2.default.getInst();
     }
 
-    init(){
-        this.boxManager.init(this);
-        this.eventManager.init(this);
-        this.findSmallerThan100();
-    }
+    _createClass(App, [{
+        key: "init",
+        value: function init() {
+            this.domManager.init();
+            this.findSmallerThan100();
+        }
+    }, {
+        key: "findSmallerThan100",
+        value: function findSmallerThan100() {
+            var a = [234, 5456, 34, 4, 23, 233];
+            var b = a.find(function (n) {
+                //找到第一个小于
+                return n < 100;
+            });
+            console.log(b);
+        }
+    }]);
 
-    findSmallerThan100(){
-        let a = [234,5456,34,4,23,233];
-        let b = a.find( (n) =>{  //找到第一个小于100的数
-            return n < 100;
-        })
-        console.log(b);
-    }
-
-
-}
+    return App;
+}();
 
 var app = new App();
 app.init();
 
-
-
 /***/ }),
-/* 3 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_jquery__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__BoxManager__ = __webpack_require__(0);
-/**
- * Created by luchu on 2017/7/6.
- */
 
 
-class EventManager{
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
 
-    constructor(){
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }(); /**
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      * Created by luchu on 2017/7/8.
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      */
+
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var DomManager = function () {
+    _createClass(DomManager, null, [{
+        key: "getInst",
+        value: function getInst() {
+            DomManager._inst = DomManager._inst ? DomManager._inst : new DomManager();
+            return DomManager._inst;
+        }
+    }]);
+
+    function DomManager() {
+        _classCallCheck(this, DomManager);
+
+        this.body = (0, _jquery2.default)("body");
     }
 
-    init(app){
-        this.app = app;
-        this.boxManager = this.app.boxManager;
-        this.bindingEvents();
-    }
+    _createClass(DomManager, [{
+        key: "init",
+        value: function init() {
+            this.body.append("<a href='#end' id='start'>你好</a>");
+            this.body.append("<a href='#start' id='end' style='margin: 800px auto;display: block'>再见</a>");
+        }
+    }]);
 
-    bindingEvents(){
-        let that = this;
-        this.boxManager.getBox().on('click',function(){
-            that.boxManager.changeColor();
-        });
-    }
+    return DomManager;
+}();
 
-
-
-
-}
-/* harmony export (immutable) */ __webpack_exports__["a"] = EventManager;
-
+exports.default = DomManager;
 
 /***/ })
 /******/ ]);

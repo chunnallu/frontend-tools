@@ -15,9 +15,9 @@ webpack 有四大核心概念：入口、出口、加载器和插件，理解这
 
   因为现在的JavaScript已经有了模块的概念，这也意味着JavaScript可以用来写更庞大，更复杂的应用。应用变大了之后，就会面临各模块之间依赖的问题，如果手工来管理这些依赖关系的话，那么这将是一个非常头痛的问题。
   
- - webpack 和 babel的关系
-  webpack是一个模块打包的工具，默认是可以识别JavaScript的模块，由于现在浏览器对ES2015 的 import/ export 语法支持还不好,所以webpack会把 import/ export 编译成浏览器能支持的旧版语法，除此之外，对 ES2015 的其它特性，则不会做任何编译（见[webpack ES2015 modules](https://webpack.js.org/guides/getting-started/#es2015-modules)）。
-  可以打开`disr/bundle.js`文件看一下,还能找到如`class`等ES2015的语法：
+ - webpack 对 ES6 的处理方式
+  webpack是一个模块打包的工具，默认是可以识别JavaScript的模块，由于现在浏览器对ES6 的 import/ export 语法支持还不好,所以webpack会把 import/ export 编译成浏览器能支持的旧版语法，除此之外，对 ES6 的其它特性，则不会做任何编译（见[webpack ES2015 modules](https://webpack.js.org/guides/getting-started/#es2015-modules)）。
+  可以打开`disr/bundle.js`文件看一下,还能找到如`class`等ES6的语法：
   
   ``` js
   
@@ -40,10 +40,7 @@ class BoxManger{
 }
 
 ```
-这也就意味着，使用ES2015写的代码,浏览器不支持的还是照样不支持。就如这个项目，不支持`class`语法的浏览器就运行不了。
-
-babel则可以把所有这些ES6代码都编译成ES5，以让所有浏览器都能够运行，也可以针对某个具体的运行环境，如chrome，把这个环境不支持的ES6特性编译成ES5.
-
+这也就意味着，使用ES2015写的代码,浏览器不支持的还是照样不支持。就如这个项目，不支持`class`语法的浏览器就运行不了。针对这个问题，可以使用babel来把ES6编译成ES5.
 
 
 ## 项目结构
@@ -68,3 +65,8 @@ npm install
 ```text
 npm start
 ```
+
+## 有用链接
+
+- [webpack 自带的插件](https://webpack.js.org/plugins/)
+- [webpack 第三方插件](https://github.com/webpack-contrib/awesome-webpack#webpack-plugins)

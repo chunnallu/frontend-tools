@@ -27,6 +27,7 @@ npm install -g windows-build-tools
 ||[basicbabel](es6/basic-babel)|使用babel编译器将ES6代码编译成ES5代码|
 ||[closure compiler](es6/closure-compiler)|使用closure compiler编译器将ES6代码编译成ES5代码|
 ||[webpackbasic](es6/webpack-basic)|使用webpack打包模块|
+||[webpackbabel](es6/webpack-babel)|使用webpack打包模块,同时用babel将ES6代码编译成ES5，以屏蔽各浏览器对ES6支持不一的情况|
 |css|||
 ||[autoprefix](css/autoprefix-basic)|自动加兼容性前缀|
 |nodejs|||
