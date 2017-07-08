@@ -6,7 +6,7 @@
 
 webpack是一个打包工具， ，在 [webpackbasic](../webpack-basic)项目曾有说到，建议可以前往浏览一下。
 
-webpack 有四大核心概念：入口、输出、加载器和插件，熟悉这几个东西对看本项目由好处[webpack concepts](https://webpack.js.org/concepts/)
+webpack 有四大核心概念：入口、输出、加载器和插件，熟悉这几个东西对看本项目有好处[webpack concepts](https://webpack.js.org/concepts/)
 
 ## babel
 
