@@ -13,7 +13,7 @@ webpack 有四大核心概念：入口、出口、加载器和插件，理解这
 
 - 为什么要用webpack？
 
-  因为现在的JavaScript已经有了模块的概念，这也意味着JavaScript可以用来写更庞大，更复杂的应用。应用变大了之后，就会面临各模块之间依赖的问题:
+  因为现在的JavaScript已经有了模块的概念，这也意味着JavaScript可以用来写更庞大，更复杂的应用。应用变大了之后，就会面临各模块之间依赖的问题，如果手工来管理这些依赖关系的话，那么这将是一个非常头痛的问题。
   
  - webpack 和 babel的关系
   webpack是一个模块打包的工具，默认是可以识别JavaScript的模块，由于现在浏览器对ES2015 的 import/ export 语法支持还不好,所以webpack会把 import/ export 编译成浏览器能支持的旧版语法，除此之外，对 ES2015 的其它特性，则不会做任何编译（见[webpack ES2015 modules](https://webpack.js.org/guides/getting-started/#es2015-modules)）。
