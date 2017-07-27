@@ -1,8 +1,8 @@
-# 基础ES6开发环境
+# babel编译器基础测试
 
 ## 项目概述
 
-这是一个基础的ES6开发环境，主要能将ES6代码通过Babel编译成ES5。
+这是一个基础的Babel编译器的例子，主要能将ES6代码通过Babel编译成ES5。
 
 因为目前浏览器对ES6语法的支持还不全面，所以，为了立即能使用ES6定义的新特性，可以使用Babel将ES6代码转译成ES5。本文参考[babel官网例子](https://babeljs.io/docs/setup/#installation)。
 
@@ -13,7 +13,6 @@
 |文件及目录|说明|
 |---|---|
 |build|构建目录，js编译后的代码将放在这里。在本项目中，我们把HTML代码和CSS代码也放在这里，只是为了方便|
-|node_modules|npm安装的本地依赖将放在这里|
 |src|这里将放我们的ES6代码|
 |.babelrc|babel配置文件|
 |package.json|npm 配置文件，里面记录着我们的开发依赖，也定义了`build`命令，因此我们运行`npm run build`才知道执行哪个命令|

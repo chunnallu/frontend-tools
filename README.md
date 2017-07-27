@@ -5,11 +5,18 @@
 frontend-tools 旨在研究前端用到的各种技术和工具，包括ES6、gulp、webpack、bower、nodejs、browser-sync等等，既是为了自己学习和总结，也是想将这些东西分享出来。
 
 ## 准备环境
+首先安装[nodejs](https://nodejs.org/zh-cn/download/current/),装好后运行：
+```text
+node -v
+npm -v
+```
+能运行成功说明安装成功了。
+
 如果是在windows下开发的话，首先以管理员身份打开一个命令行，运行：
 ```text
 npm install -g windows-build-tools
 ```
-这会安装Microsoft开发的windowsnode环境构建工具
+这会安装Microsoft开发的windows node开发环境构建工具
 
 # 子项目
 每个子项目都独立的，下载下来后都可独立运行
@@ -18,10 +25,14 @@ npm install -g windows-build-tools
 |---|---|---|
 |es6|||
 ||[basicbabel](es6/basic-babel)|使用babel编译器将ES6代码编译成ES5代码|
+||[closure compiler](es6/closure-compiler)|使用closure compiler编译器将ES6代码编译成ES5代码|
+||[webpackbasic](es6/webpack-basic)|使用webpack打包模块|
+||[webpackbabel](es6/webpack-babel)|使用webpack打包模块,同时用babel将ES6代码编译成ES5，以屏蔽各浏览器对ES6支持不一的情况|
 |css|||
 ||[autoprefix](css/autoprefix-basic)|自动加兼容性前缀|
 |nodejs|||
-||[node-debugger](nodejs/node-debugger)|nodejs自带命令行调试工具|
+||[node-debugger](nodejs/node-debugger)|使用nodejs自带命令行调试工具调试js|
+||[node-debugger-gulp-task](node-debugger-gulp-task)|使用node原生调试器调试gulp任务|
 ||node-inspector|nodejs调试工具|
 |i18n|||
 |media|||

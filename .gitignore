@@ -6,7 +6,6 @@
 .sass-cache/
 .tmp/
 coverage/
-dist/
 .tools/
 
 ## OS files

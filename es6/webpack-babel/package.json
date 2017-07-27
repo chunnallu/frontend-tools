@@ -1,0 +1,20 @@
+{
+  "name": "webpack-babel",
+  "version": "1.0.0",
+  "description": "webpack babel",
+  "main": "webpack.config.js",
+  "scripts": {
+    "start": "webpack --config webpack.config.js"
+  },
+  "author": "lcl",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-env": "^1.6.0",
+    "webpack": "^3.1.0"
+  },
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
+}

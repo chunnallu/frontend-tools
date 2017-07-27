@@ -1,0 +1,19 @@
+{
+  "name": " webpackbasic ",
+  "version": "1.0.0",
+  "description": "webpack basic开发环境",
+  "scripts": {
+    "start": "webpack --config webpack.config.js"
+  },
+  "keywords": [
+    "es6"
+  ],
+  "author": "luchunnal",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^3.0.0"
+  },
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
+}
