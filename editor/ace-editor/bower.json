@@ -1,0 +1,22 @@
+{
+  "name": "ace-editor-test",
+  "description": "",
+  "main": "",
+  "authors": [
+    "luchunlong <979486266@qq.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/chunnallu/frontend-tools",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "ace-builds": "^1.2.8",
+    "jquery": "^3.2.1"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "ace-editor-test",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "http-server ./ -p 12345",
+    "postinstall": "bower install"
+  },
+  "devDependencies": {
+    "bower": "^1.8.0",
+    "http-server": "^0.10.0"
+  }
+}

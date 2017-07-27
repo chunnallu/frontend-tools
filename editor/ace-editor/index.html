@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ACE in Action</title>
+    <style type="text/css" media="screen">
+        html, body {
+            margin: 0;
+            font-size: 10px;
+        }
+
+        .selector-bar {
+            height: 4rem;
+            border: 1px #ccc solid;
+            display: flex;
+            align-items: center;
+        }
+
+        .selector-bar select{
+            line-height: 2rem;
+            font-size: 1.8rem;
+            margin-left: .5rem;
+            min-width: 15rem;
+        }
+        .selector-bar label{
+            margin-left: 1.5rem;
+        }
+
+        #editor {
+            width: 100%;
+            min-height: 70rem;
+        }
+    </style>
+</head>
+<body>
+
+<div class="selector-bar">
+    <label>语法：</label>
+    <select id="mode-selector">
+        <option value="javascript">javascript</option>
+        <option value="yaml">yaml</option>
+        <option value="json">json</option>
+    </select>
+    <label>主题：</label>
+    <select id="theme-selector">
+        <option value="monokai">monokai</option>
+        <option value="ambiance">ambiance</option>
+        <option value="chrome">chrome</option>
+        <option value="clouds">clouds</option>
+        <option value="dreamweaver">dreamweaver</option>
+        <option value="eclipse">eclipse</option>
+        <option value="github">github</option>
+        <option value="terminal">terminal</option>
+        <option value="xcode">xcode</option>
+    </select>
+</div>
+
+<div id="editor"></div>
+
+<script src="bower_components/ace-builds/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+<script src="bower_components/jquery/dist/jquery.js" type="text/javascript" charset="utf-8"></script>
+<script>
+    var editor = ace.edit("editor");
+    editor.setTheme("ace/theme/monokai");
+    editor.getSession().setMode("ace/mode/javascript");
+
+    var modeSelector = $("#mode-selector");
+    var themeSelector = $("#theme-selector");
+
+    modeSelector.on("change",function(e){
+        var mode = modeSelector.val();
+        editor.getSession().setMode("ace/mode/"+mode);
+    });
+
+    themeSelector.on("change",function(e){
+        var theme = themeSelector.val();
+        editor.setTheme("ace/theme/"+theme);
+    });
+
+</script>
+</body>
+</html>
