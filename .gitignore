@@ -19,3 +19,6 @@ dist/
 *.iml
 # Vi temporary files
 *.swp
+
+# npm
+**/npm-debug.log
