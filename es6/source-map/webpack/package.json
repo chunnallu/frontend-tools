@@ -1,0 +1,15 @@
+{
+  "name": "source-map",
+  "version": "0.0.1",
+  "devDependencies": {
+    "http-server": "^0.10.0",
+    "webpack": "^3.4.1",
+    "webpack-dev-server": "^2.6.1"
+  },
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "start": "http-server ./dist -p 80",
+    "start-dev": "webpack-dev-server --open"
+  }
+}
