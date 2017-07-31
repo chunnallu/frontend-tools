@@ -45,7 +45,7 @@ npm install -g windows-build-tools
 |子项目|概述|
 |---|---|
 |[gulp-sass](project-structure/gulp-sass)|主要是为了能够使用sass语法而搭建|
-|[gulp-sass](project-structure/gulp-sass)|主要是为了能够使用sass语法而搭建，同时使用bower管理运行依赖|
+|[gulp-sass-bower](project-structure/gulp-sass-bower)|主要是为了能够使用sass语法而搭建，同时使用bower管理运行依赖|
 
 
 
