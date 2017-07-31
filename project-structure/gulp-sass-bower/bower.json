@@ -1,0 +1,20 @@
+{
+  "name": "dashboard-module",
+  "description": "no",
+  "main": "src/module/module.html",
+  "authors": [
+    "luchunlong <979486266@qq.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
+}

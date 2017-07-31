@@ -18,7 +18,7 @@ npm install -g windows-build-tools
 ```
 这会安装Microsoft开发的windows node开发环境构建工具
 
-# 子项目
+# 学习用子项目
 每个子项目都独立的，下载下来后都可独立运行
 
 |项目|子项目|概述|
@@ -40,6 +40,14 @@ npm install -g windows-build-tools
 ||[webp](media/webp)|将jpg转成webp，体验webp格式|
 |editor|||
 ||[ace-editor](editor/ace-editor)|ace-editor是一种能够嵌入网页中使用的代码编辑器，能够支持一百多中代码着色|
+
+## 工程架构子项目
+|子项目|概述|
+|---|---|
+|[gulp-sass](project-structure/gulp-sass)|主要是为了能够使用sass语法而搭建|
+|[gulp-sass](project-structure/gulp-sass)|主要是为了能够使用sass语法而搭建，同时使用bower管理运行依赖|
+
+
 
 ## 学习资源
 1. [Microsoft + Node.js Guidelines](https://github.com/Microsoft/nodejs-guidelines)
