@@ -28,8 +28,8 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-		'src/**/*.js': ['webpack','babel'],
-		'test/**/*.spec.js': ['webpack','babel'],
+		'src/**/*.js': ['webpack','babel','sourcemap'],
+		'test/**/*.spec.js': ['webpack','babel','sourcemap'],
     },
 
 
