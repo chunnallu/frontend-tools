@@ -16,9 +16,8 @@ npm -v
 ```text
 npm install -g windows-build-tools
 ```
-这会安装Microsoft开发的windows node开发环境构建工具
-
-# 学习用子项目
+这会安装Microsoft开发的windows node开发环境构建工具，参考：[Microsoft + Node.js Guidelines](https://github.com/Microsoft/nodejs-guidelines)
+# 学习技术子项目
 每个子项目都独立的，下载下来后都可独立运行
 
 |项目|子项目|概述|
@@ -46,6 +45,12 @@ npm install -g windows-build-tools
 |---|---|
 |[gulp-sass](project-structure/gulp-sass)|主要是为了能够使用sass语法而搭建|
 |[gulp-sass-bower](project-structure/gulp-sass-bower)|主要是为了能够使用sass语法而搭建，同时使用bower管理运行依赖|
+
+## 测试相关子项目
+|子项目|概述|
+|---|---|
+|[karma-jasnine-basic](test/karma-jasnine-basic)|karma+jasmine基础测试环境，支持使用ES6语法，需要chrome浏览器|
+
 
 
 
