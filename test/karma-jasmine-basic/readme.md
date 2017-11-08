@@ -25,6 +25,12 @@ npm install
 karma start
 ```
 
+## 配置webstorm
+
+webstorm可以配置成一键运行测试。打开 [run] --> [edit configurations],点击[+]，选择[Karma],然后按下图进行配置
+
+![](webstorm-run-config.png)
+
 ## 参考链接
 1. 集成webpack和babel插件请参考[karma config Preprocessors](https://karma-runner.github.io/1.0/config/preprocessors.html)和[使用 Karma 在真实浏览器上测试](http://csbun.github.io/blog/2015/11/karma/)
 1. jasmine 语法参考——[jasmine 2.8 API](https://jasmine.github.io/api/2.8/)
