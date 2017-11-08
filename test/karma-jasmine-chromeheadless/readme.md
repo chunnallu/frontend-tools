@@ -2,7 +2,7 @@
 
 本项目是js基础测试环境，拷贝自[karma-jasnine-basic](karma-jasmine-basic)，使用karma作为测试框架，使用jasmine作为断言库。
 
-不同的是，本项目将使用ChromeHeadless浏览器作为测试浏览器。ChromeHeadless是一种无头浏览器，也就是它是没有界面的，并可以设置它不使用GPU，这对于在没有图形界面、没有GPU的服务器上运行测试时很有帮组的。
+不同的是，本项目将使用ChromeHeadless浏览器作为测试浏览器。ChromeHeadless是一种无头浏览器，也就是它是没有界面的，并可以设置它不使用GPU，这对于在没有图形界面、没有GPU的服务器上运行测试时很有帮助的。
 
 
 ## 安装ChromeHeadless
