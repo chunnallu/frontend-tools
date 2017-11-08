@@ -50,6 +50,7 @@ npm install -g windows-build-tools
 |子项目|概述|
 |---|---|
 |[karma-jasnine-basic](test/karma-jasmine-basic)|karma+jasmine基础测试环境，支持使用ES6语法，需要chrome浏览器|
+|[karma-jasnine-chromeheadless](test/karma-jasmine-chromeheadless)|karma+jasmine基础测试环境，使用chromeheadless浏览器，更适合用在服务器上|
 
 
 
